@@ -1,16 +1,17 @@
-﻿using Grpc.Net.Client;
-using ProtoBuf.Grpc.Client;
-using System;
-using System.Diagnostics;
-using System.Net.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using WeatherForecast.Grpc.Shared;
+using System.Diagnostics;
+using System.ServiceModel;
+using WeatherForecast.WCF.Shared;
 
-namespace WeatherForecast.Grpc.Protobuf.Client
+namespace WeatherForecast.WCF.Client
 {
-    internal class Program
+    class Program
     {
-        private static async Task Main()
+        static void Main(string[] args)
         {
             Console.WriteLine("Press a key to start");
             Console.ReadKey();
@@ -18,11 +19,12 @@ namespace WeatherForecast.Grpc.Protobuf.Client
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
 
-            GrpcClientFactory.AllowUnencryptedHttp2 = true;
-            var http = GrpcChannel.ForAddress("http://localhost:5001");
-            var client = http.CreateGrpcService<IWeatherForecasts>();
+            //Step 1: Crea una istanza del WCF proxy.
+            ClientProxy client =
+                new ClientProxy(new BasicHttpBinding(),
+                                new EndpointAddress("http://localhost:9001/WeatherService"));
 
-            var response = await client.GetWeatherAsync();
+            var response = client.GetWeather();
 
             stopWatch.Stop();
             foreach (var forecast in response.Forecasts)
@@ -36,15 +38,17 @@ namespace WeatherForecast.Grpc.Protobuf.Client
 
             Stopwatch stopWatch1 = new Stopwatch();
             stopWatch1.Start();
-            var http1 = GrpcChannel.ForAddress("http://localhost:5001");
-            var client1 = http.CreateGrpcService<IWeatherForecasts>();
+            ClientProxy client1 =
+                new ClientProxy(new BasicHttpBinding(),
+                                new EndpointAddress("http://localhost:9001/WeatherService"));
 
-            var response1 = await client1.GetWeatherAsync();
+            var response1 = client1.GetWeather();
 
             stopWatch1.Stop();
             Console.WriteLine($"Time Elapsed {stopWatch1.ElapsedMilliseconds}");
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
+
 
         }
     }

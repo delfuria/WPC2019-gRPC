@@ -32,6 +32,20 @@ namespace WeatherForecast.Grpc.Client
             Console.WriteLine($"Time Elapsed {stopWatch.ElapsedMilliseconds}");
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
+
+            Stopwatch stopWatch1 = new Stopwatch();
+            stopWatch1.Start();
+
+            using var channel1 = GrpcChannel.ForAddress("https://localhost:5005");
+
+            var client1 = new WeatherForecastsClient(channel1);
+
+            var reply1 = await client.GetWeatherAsync(new Empty());
+            stopWatch1.Stop();
+            Console.WriteLine($"Time Elapsed {stopWatch1.ElapsedMilliseconds}");
+            Console.WriteLine("Press a key to exit");
+            Console.ReadKey();
+
         }
     }
 }

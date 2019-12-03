@@ -52,6 +52,12 @@
         }
     */
   "MultiProjectConfigurations": {
+    "WCF Client/Server": {
+      "Projects": {
+        "WcfServer": {},
+        "WcfClient": {}
+      }
+    },
     "Grpc DotNetCore": {
       "Projects": {
         "HyperMathGrpcService": {},
@@ -92,6 +98,12 @@
       "Projects": {
         "WeatherForecast.Magic.Client": {},
         "WeatherForecast.Magic.Server": {}
+      }
+    },
+    "Weather WCF Demo": {
+      "Projects": {
+        "WeatherForecast.WCF.Client": {},
+        "WeatherForecast.WCF.Service": {}
       }
     },
     "Weather WebApp/Server": {
