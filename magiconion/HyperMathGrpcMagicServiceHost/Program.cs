@@ -10,8 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Server
-{
-    class Program
+{    class Program
     {
         static async Task Main(string[] args)
         {
@@ -27,8 +26,8 @@ namespace Server
             var webHost = new WebHostBuilder()
                 .ConfigureServices(collection =>
                 {
-                    // Add MagicOnionServiceDefinition for reference from Startup.
-                    collection.AddSingleton<MagicOnionServiceDefinition>(magicOnionHost.Services.GetService<MagicOnionServiceDefinition>());
+                // Add MagicOnionServiceDefinition for reference from Startup.
+                collection.AddSingleton<MagicOnionServiceDefinition>(magicOnionHost.Services.GetService<MagicOnionHostedServiceDefinition>().ServiceDefinition);
                 })
                 .UseKestrel()
                 .UseStartup<Startup>()
@@ -53,13 +52,11 @@ namespace Server
             // HttpGateway requires two middlewares.
             // One is SwaggerView(MagicOnionSwaggerMiddleware)
             // One is Http1-JSON to gRPC-MagicOnion gateway(MagicOnionHttpGateway)
-
             app.UseMagicOnionSwagger(magicOnion.MethodHandlers, new SwaggerOptions("MagicOnion.Server", "Swagger Integration Test", "/")
             {
                 // XmlDocumentPath = xmlPath
             });
-            app.UseMagicOnionHttpGateway(magicOnion.MethodHandlers, new Channel("localhost:9001", ChannelCredentials.Insecure));
+            app.UseMagicOnionHttpGateway(magicOnion.MethodHandlers, new Channel("localhost:12345", ChannelCredentials.Insecure));
         }
     }
-
 }

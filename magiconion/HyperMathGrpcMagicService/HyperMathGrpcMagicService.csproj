@@ -7,9 +7,6 @@
 
   <ItemGroup>
     <PackageReference Include="MagicOnion.Hosting" Version="2.6.4" />
-    <PackageReference Include="MagicOnion.HttpGateway" Version="2.6.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>

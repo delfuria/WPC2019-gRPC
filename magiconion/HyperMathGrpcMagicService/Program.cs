@@ -1,11 +1,7 @@
 ﻿using Grpc.Core;
 using MagicOnion;
 using MagicOnion.Hosting;
-using MagicOnion.HttpGateway.Swagger;
 using MagicOnion.Server;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using System;

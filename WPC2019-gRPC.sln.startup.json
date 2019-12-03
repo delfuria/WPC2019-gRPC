@@ -91,7 +91,7 @@
     "Magic Onion Client/Server": {
       "Projects": {
         "HyperMathGrpcMagicClient": {},
-        "HyperMathGrpcMagicService": {}
+        "HyperMathGrpcMagicServiceHost": {}
       }
     }
   }
