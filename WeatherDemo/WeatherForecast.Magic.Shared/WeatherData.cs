@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MessagePack;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -6,14 +7,14 @@ using System.Text;
 
 namespace HyperMathGrpcMagicShared
 {
-    [DataContract]
+    [MessagePackObject]
     public class WeatherData
     {
-        [DataMember]
+        [Key(0)]
         public DateTime DateTimeStamp { get; set; }
-        [DataMember]
+        [Key(1)]
         public int TemperatureC { get; set; }
-        [DataMember]
+        [Key(2)]
         public string Summary { get; set; }
     }
 }
