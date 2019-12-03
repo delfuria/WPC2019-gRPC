@@ -85,6 +85,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicShared", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicServiceHost", "magiconion\HyperMathGrpcMagicServiceHost\HyperMathGrpcMagicServiceHost.csproj", "{855D278B-E145-4478-AEA3-F408003561EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicChatService", "magiconion\HyperMathGrpcMagicChatService\HyperMathGrpcMagicChatService.csproj", "{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicChatShared", "magiconion\HyperMathGrpcMagicChatShared\HyperMathGrpcMagicChatShared.csproj", "{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicChatClient", "magiconion\HyperMathGrpcMagicChatClient\HyperMathGrpcMagicChatClient.csproj", "{E2246AC0-6DBA-4333-894F-CB46D727173A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StreamingHub", "StreamingHub", "{7A7620BA-2820-4430-9878-3D4E292B9378}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -187,6 +195,18 @@ Global
 		{855D278B-E145-4478-AEA3-F408003561EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{855D278B-E145-4478-AEA3-F408003561EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{855D278B-E145-4478-AEA3-F408003561EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2246AC0-6DBA-4333-894F-CB46D727173A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2246AC0-6DBA-4333-894F-CB46D727173A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2246AC0-6DBA-4333-894F-CB46D727173A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2246AC0-6DBA-4333-894F-CB46D727173A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -220,6 +240,10 @@ Global
 		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
 		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
 		{855D278B-E145-4478-AEA3-F408003561EF} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
+		{45EC8C7C-CB1D-4A9A-A9AE-3FD07E0766D9} = {7A7620BA-2820-4430-9878-3D4E292B9378}
+		{CCE55F6F-5DC1-4AD7-AB05-CF7892ABCCE5} = {7A7620BA-2820-4430-9878-3D4E292B9378}
+		{E2246AC0-6DBA-4333-894F-CB46D727173A} = {7A7620BA-2820-4430-9878-3D4E292B9378}
+		{7A7620BA-2820-4430-9878-3D4E292B9378} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A092D3-CBE0-457B-A92D-AC0CE47F77A2}

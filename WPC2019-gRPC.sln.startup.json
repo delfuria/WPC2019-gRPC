@@ -93,6 +93,12 @@
         "HyperMathGrpcMagicClient": {},
         "HyperMathGrpcMagicServiceHost": {}
       }
+    },
+    "Magic Onion Chat": {
+      "Projects": {
+        "HyperMathGrpcMagicChatClient": {},
+        "HyperMathGrpcMagicChatService": {}
+      }
     }
   }
 }

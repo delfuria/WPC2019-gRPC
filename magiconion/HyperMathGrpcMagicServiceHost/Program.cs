@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Server
+namespace HyperMathGrpcMagicServiceHost
 {    class Program
     {
         static async Task Main(string[] args)
@@ -36,27 +36,6 @@ namespace Server
 
             // Run and wait both.
             await Task.WhenAll(webHost.RunAsync(), magicOnionHost.RunAsync());
-        }
-    }
-
-    // WebAPI Startup configuration.
-    public class Startup
-    {
-        // Inject MagicOnionServiceDefinition from DIl
-        public void Configure(IApplicationBuilder app, MagicOnionServiceDefinition magicOnion)
-        {
-            // Optional:Add Summary to Swagger
-            // var xmlName = "Sandbox.NetCoreServer.xml";
-            // var xmlPath = Path.Combine(Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), xmlName);
-
-            // HttpGateway requires two middlewares.
-            // One is SwaggerView(MagicOnionSwaggerMiddleware)
-            // One is Http1-JSON to gRPC-MagicOnion gateway(MagicOnionHttpGateway)
-            app.UseMagicOnionSwagger(magicOnion.MethodHandlers, new SwaggerOptions("MagicOnion.Server", "Swagger Integration Test", "/")
-            {
-                // XmlDocumentPath = xmlPath
-            });
-            app.UseMagicOnionHttpGateway(magicOnion.MethodHandlers, new Channel("localhost:12345", ChannelCredentials.Insecure));
         }
     }
 }
