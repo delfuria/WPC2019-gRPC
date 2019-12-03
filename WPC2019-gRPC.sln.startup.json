@@ -87,9 +87,12 @@
         "WeatherForecast.Grpc.Client": {},
         "WeatherForecast.Grpc.Server": {}
       }
+    },
+    "Magic Onion Client/Server": {
+      "Projects": {
+        "HyperMathGrpcMagicClient": {},
+        "HyperMathGrpcMagicService": {}
+      }
     }
-
   }
 }
-
-

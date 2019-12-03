@@ -75,6 +75,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.WebApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Shared", "WeatherDemo\WeatherForecast.Grpc.Shared\WeatherForecast.Grpc.Shared.csproj", "{90F2E143-AC70-44F4-82D6-816DEEF70DBF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Magic", "Magic", "{EF731AAE-CD40-470F-A625-023A2B3F85BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicClient", "magiconion\HyperMathGrpcMagicClient\HyperMathGrpcMagicClient.csproj", "{07689E75-3DEB-408D-BF33-6085EB5D13EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicService", "magiconion\HyperMathGrpcMagicService\HyperMathGrpcMagicService.csproj", "{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicShared", "magiconion\HyperMathGrpcMagicShared\HyperMathGrpcMagicShared.csproj", "{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperMathGrpcMagicServiceHost", "magiconion\HyperMathGrpcMagicServiceHost\HyperMathGrpcMagicServiceHost.csproj", "{855D278B-E145-4478-AEA3-F408003561EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,6 +171,22 @@ Global
 		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07689E75-3DEB-408D-BF33-6085EB5D13EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07689E75-3DEB-408D-BF33-6085EB5D13EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07689E75-3DEB-408D-BF33-6085EB5D13EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07689E75-3DEB-408D-BF33-6085EB5D13EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{855D278B-E145-4478-AEA3-F408003561EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{855D278B-E145-4478-AEA3-F408003561EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{855D278B-E145-4478-AEA3-F408003561EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{855D278B-E145-4478-AEA3-F408003561EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +216,10 @@ Global
 		{89B15A86-2B37-49AF-9801-A432958DB7CF} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
 		{94861A39-DA09-4C32-A1BF-014BA19F54F9} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
 		{90F2E143-AC70-44F4-82D6-816DEEF70DBF} = {978921D5-66D5-4B68-976A-9D1AC85DAE2C}
+		{07689E75-3DEB-408D-BF33-6085EB5D13EB} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
+		{38FB3B94-1304-4AE3-9DE7-A53D0A67BCD0} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
+		{2CEAA4CE-3D50-4801-9C79-84B6E3A8F238} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
+		{855D278B-E145-4478-AEA3-F408003561EF} = {EF731AAE-CD40-470F-A625-023A2B3F85BC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A092D3-CBE0-457B-A92D-AC0CE47F77A2}
