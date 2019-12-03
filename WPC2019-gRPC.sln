@@ -3,9 +3,106 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcService", "dotnetcore\HyperMathGrpcService\HyperMathGrpcService.csproj", "{3E82084D-FBEF-4EB4-B8CD-E2B06186716E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Core", ".NET Core", "{40E26348-2423-4EE1-AA15-3313BB927C85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{CDF9FD53-B8B6-4184-B671-6992154AF7DA}"
+	ProjectSection(SolutionItems) = preProject
+		dotnetcore\Protos\HyperMath.proto = dotnetcore\Protos\HyperMath.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcClient", "dotnetcore\HyperMathGrpcClient\HyperMathGrpcClient.csproj", "{C8047E7C-075B-4430-82A8-09CF6F952F24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET", ".NET", "{E65D2537-8374-4C5B-A78D-E01C24634489}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcLegacyClient", "dotnet\HyperMathGrpcLegacyClient\HyperMathGrpcLegacyClient.csproj", "{EC4C276A-FA50-4F5F-8639-DE5FF944B30F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcLegacyService", "dotnet\HyperMathGrpcLegacyService\HyperMathGrpcLegacyService.csproj", "{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcLegacyLibrary", "dotnet\HyperMathGrpcLegacyLibrary\HyperMathGrpcLegacyLibrary.csproj", "{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protobuf.Net", "Protobuf.Net", "{2317DB48-B1FC-4EAD-B76A-6C3F4363D313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{F9480668-9A16-4E8A-8206-2918B6EE520C}"
+	ProjectSection(SolutionItems) = preProject
+		Protos\HyperMath.proto = Protos\HyperMath.proto
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathProtobufNetGrpcClient", "pbnet\HyperMathProtobufNetGrpcClient\HyperMathProtobufNetGrpcClient.csproj", "{E80DF981-423B-4682-A564-CB9DD6EC142E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathProtobufNetGrpcLibrary", "pbnet\HyperMathProtobufNetGrpcLibrary\HyperMathProtobufNetGrpcLibrary.csproj", "{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathProtobufNetGrpcService", "pbnet\Scartati\HyperMathProtobufNetGrpcService\HyperMathProtobufNetGrpcService.csproj", "{CB96C043-0E9A-4087-A686-16B2865EABE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather Demo", "Weather Demo", "{BF29CC32-502D-47FB-9167-451EADD2BDBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protobuf.Grpc", "Protobuf.Grpc", "{978921D5-66D5-4B68-976A-9D1AC85DAE2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rest", "Rest", "{086A4664-62FB-4BE7-83F5-F1CCE0D827BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14C9F692-E329-4F82-8921-AEC55B425A82}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8047E7C-075B-4430-82A8-09CF6F952F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8047E7C-075B-4430-82A8-09CF6F952F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8047E7C-075B-4430-82A8-09CF6F952F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8047E7C-075B-4430-82A8-09CF6F952F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80DF981-423B-4682-A564-CB9DD6EC142E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80DF981-423B-4682-A564-CB9DD6EC142E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80DF981-423B-4682-A564-CB9DD6EC142E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80DF981-423B-4682-A564-CB9DD6EC142E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E} = {40E26348-2423-4EE1-AA15-3313BB927C85}
+		{CDF9FD53-B8B6-4184-B671-6992154AF7DA} = {40E26348-2423-4EE1-AA15-3313BB927C85}
+		{C8047E7C-075B-4430-82A8-09CF6F952F24} = {40E26348-2423-4EE1-AA15-3313BB927C85}
+		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F} = {E65D2537-8374-4C5B-A78D-E01C24634489}
+		{3A9D025E-2ED7-4593-A3C6-08AAFCD2E5DE} = {E65D2537-8374-4C5B-A78D-E01C24634489}
+		{2D54D46A-097E-469B-8BB5-4EECE6FD2C1D} = {E65D2537-8374-4C5B-A78D-E01C24634489}
+		{E80DF981-423B-4682-A564-CB9DD6EC142E} = {2317DB48-B1FC-4EAD-B76A-6C3F4363D313}
+		{7E26D4B9-9D42-4875-B34B-1A45F2CFD8F1} = {2317DB48-B1FC-4EAD-B76A-6C3F4363D313}
+		{CB96C043-0E9A-4087-A686-16B2865EABE5} = {2317DB48-B1FC-4EAD-B76A-6C3F4363D313}
+		{8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
+		{978921D5-66D5-4B68-976A-9D1AC85DAE2C} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
+		{086A4664-62FB-4BE7-83F5-F1CCE0D827BB} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A092D3-CBE0-457B-A92D-AC0CE47F77A2}

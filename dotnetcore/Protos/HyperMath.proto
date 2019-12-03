@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "HyperMath.Grpc";
+
+// corrisponde al namespace
+//package HyperMath.Grpc;
+
+// The MathService service definition.
+service MathService {
+  // Do a Sum
+  rpc Sum (MathRequest) returns (MathReply){}
+  rpc GetAllCalc (MathRequest) returns (stream MathReply) {}
+}
+
+
+// The request message containing the user's name.
+message MathRequest {
+  double op1 = 1;
+  double op2 = 2;
+}
+
+// The response message containing the greetings.
+message MathReply {
+  double resp = 1;
+}
