@@ -69,6 +69,24 @@
         "HyperMathGrpcLegacyService": {},
         "HyperMathGrpcLegacyClient": {}
       }
+    },
+    "Weather Rest Demo": {
+      "Projects": {
+        "WeatherForecast.Rest.Client": {},
+        "WeatherForecast.Rest.Server": {}
+      }
+    },
+    "Weather Protobuf Demo": {
+      "Projects": {
+        "WeatherForecast.Grpc.Protobuf.Client": {},
+        "WeatherForecast.Grpc.Protobuf.Server": {}
+      }
+    },
+    "Weather Grpc Client/Server": {
+      "Projects": {
+        "WeatherForecast.Grpc.Client": {},
+        "WeatherForecast.Grpc.Server": {}
+      }
     }
 
   }

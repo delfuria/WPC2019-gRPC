@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "WeatherForecast.Rest.Client": {
+      "commandName": "Project"
+    }
+  }
+}

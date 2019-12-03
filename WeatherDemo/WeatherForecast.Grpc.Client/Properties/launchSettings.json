@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "WeatherForecast.Grpc.Client": {
+      "commandName": "Project"
+    }
+  }
+}

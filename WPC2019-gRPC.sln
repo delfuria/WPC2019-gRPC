@@ -36,6 +36,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathProtobufNetGrpcService", "pbnet\Scartati\HyperMathProtobufNetGrpcService\HyperMathProtobufNetGrpcService.csproj", "{CB96C043-0E9A-4087-A686-16B2865EABE5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather Demo", "Weather Demo", "{BF29CC32-502D-47FB-9167-451EADD2BDBF}"
+	ProjectSection(SolutionItems) = preProject
+		WeatherDemo\Proto\weather.proto = WeatherDemo\Proto\weather.proto
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gRPC", "gRPC", "{8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}"
 EndProject
@@ -47,6 +50,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Rest.Client", "WeatherDemo\WeatherForecast.Rest.Client\WeatherForecast.Rest.Client.csproj", "{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Rest.Server", "WeatherDemo\WeatherForecast.Rest.Server\WeatherForecast.Rest.Server.csproj", "{D435B1A1-AC72-4790-80D6-DF9C4D11CA64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Protobuf.Client", "WeatherDemo\WeatherForecast.Grpc.Protobuf.Client\WeatherForecast.Grpc.Protobuf.Client.csproj", "{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Protobuf.Server", "WeatherDemo\WeatherForecast.Grpc.Protobuf.Server\WeatherForecast.Grpc.Protobuf.Server.csproj", "{877B956F-887E-4EE1-B92B-C6EF8FB3039E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Client", "WeatherDemo\WeatherForecast.Grpc.Client\WeatherForecast.Grpc.Client.csproj", "{037087CC-AAAB-434D-AF91-3552D52AFC63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.ClientLib", "WeatherDemo\WeatherForecast.Grpc.ClientLib\WeatherForecast.Grpc.ClientLib.csproj", "{64443536-4A4E-43C8-9ADF-00E4F94FCDA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.ClientServerStreaming", "WeatherDemo\WeatherForecast.Grpc.ClientServerStreaming\WeatherForecast.Grpc.ClientServerStreaming.csproj", "{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.HealthCheckClient", "WeatherDemo\WeatherForecast.Grpc.HealthCheckClient\WeatherForecast.Grpc.HealthCheckClient.csproj", "{95532589-AAE4-440F-96C5-D8EAFB7F35FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Server", "WeatherDemo\WeatherForecast.Grpc.Server\WeatherForecast.Grpc.Server.csproj", "{0060C980-2925-49CB-954F-18B1E14CE0A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.StreamingClient", "WeatherDemo\WeatherForecast.Grpc.StreamingClient\WeatherForecast.Grpc.StreamingClient.csproj", "{89B15A86-2B37-49AF-9801-A432958DB7CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.WebApp", "WeatherDemo\WeatherForecast.Grpc.WebApp\WeatherForecast.Grpc.WebApp.csproj", "{94861A39-DA09-4C32-A1BF-014BA19F54F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Grpc.Shared", "WeatherDemo\WeatherForecast.Grpc.Shared\WeatherForecast.Grpc.Shared.csproj", "{90F2E143-AC70-44F4-82D6-816DEEF70DBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +113,54 @@ Global
 		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB96C043-0E9A-4087-A686-16B2865EABE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D435B1A1-AC72-4790-80D6-DF9C4D11CA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D435B1A1-AC72-4790-80D6-DF9C4D11CA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D435B1A1-AC72-4790-80D6-DF9C4D11CA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D435B1A1-AC72-4790-80D6-DF9C4D11CA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877B956F-887E-4EE1-B92B-C6EF8FB3039E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877B956F-887E-4EE1-B92B-C6EF8FB3039E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877B956F-887E-4EE1-B92B-C6EF8FB3039E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877B956F-887E-4EE1-B92B-C6EF8FB3039E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037087CC-AAAB-434D-AF91-3552D52AFC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037087CC-AAAB-434D-AF91-3552D52AFC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037087CC-AAAB-434D-AF91-3552D52AFC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037087CC-AAAB-434D-AF91-3552D52AFC63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64443536-4A4E-43C8-9ADF-00E4F94FCDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64443536-4A4E-43C8-9ADF-00E4F94FCDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64443536-4A4E-43C8-9ADF-00E4F94FCDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64443536-4A4E-43C8-9ADF-00E4F94FCDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95532589-AAE4-440F-96C5-D8EAFB7F35FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95532589-AAE4-440F-96C5-D8EAFB7F35FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95532589-AAE4-440F-96C5-D8EAFB7F35FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95532589-AAE4-440F-96C5-D8EAFB7F35FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0060C980-2925-49CB-954F-18B1E14CE0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0060C980-2925-49CB-954F-18B1E14CE0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0060C980-2925-49CB-954F-18B1E14CE0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0060C980-2925-49CB-954F-18B1E14CE0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B15A86-2B37-49AF-9801-A432958DB7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B15A86-2B37-49AF-9801-A432958DB7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B15A86-2B37-49AF-9801-A432958DB7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B15A86-2B37-49AF-9801-A432958DB7CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94861A39-DA09-4C32-A1BF-014BA19F54F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94861A39-DA09-4C32-A1BF-014BA19F54F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94861A39-DA09-4C32-A1BF-014BA19F54F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94861A39-DA09-4C32-A1BF-014BA19F54F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F2E143-AC70-44F4-82D6-816DEEF70DBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +178,18 @@ Global
 		{8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
 		{978921D5-66D5-4B68-976A-9D1AC85DAE2C} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
 		{086A4664-62FB-4BE7-83F5-F1CCE0D827BB} = {BF29CC32-502D-47FB-9167-451EADD2BDBF}
+		{D093B18E-8EA2-4DAD-B548-C4BF93E73C9D} = {086A4664-62FB-4BE7-83F5-F1CCE0D827BB}
+		{D435B1A1-AC72-4790-80D6-DF9C4D11CA64} = {086A4664-62FB-4BE7-83F5-F1CCE0D827BB}
+		{3F4DE598-7CC5-48A7-9513-EE818C2EA1CC} = {978921D5-66D5-4B68-976A-9D1AC85DAE2C}
+		{877B956F-887E-4EE1-B92B-C6EF8FB3039E} = {978921D5-66D5-4B68-976A-9D1AC85DAE2C}
+		{037087CC-AAAB-434D-AF91-3552D52AFC63} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{64443536-4A4E-43C8-9ADF-00E4F94FCDA4} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{5EDE4844-D0BD-4CB2-8D33-ECFD2E2ED93E} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{95532589-AAE4-440F-96C5-D8EAFB7F35FF} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{0060C980-2925-49CB-954F-18B1E14CE0A2} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{89B15A86-2B37-49AF-9801-A432958DB7CF} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{94861A39-DA09-4C32-A1BF-014BA19F54F9} = {8E4A87AD-F6CE-41D8-BE7C-A3BC17E6438F}
+		{90F2E143-AC70-44F4-82D6-816DEEF70DBF} = {978921D5-66D5-4B68-976A-9D1AC85DAE2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43A092D3-CBE0-457B-A92D-AC0CE47F77A2}
