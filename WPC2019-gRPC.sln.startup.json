@@ -82,9 +82,33 @@
         "WeatherForecast.Grpc.Protobuf.Server": {}
       }
     },
-    "Weather Grpc Client/Server": {
+    "Weather Grpc Demo": {
       "Projects": {
         "WeatherForecast.Grpc.Client": {},
+        "WeatherForecast.Grpc.Server": {}
+      }
+    },
+    "Weather Magic Demo": {
+      "Projects": {
+        "WeatherForecast.Magic.Client": {},
+        "WeatherForecast.Magic.Server": {}
+      }
+    },
+    "Weather WebApp/Server": {
+      "Projects": {
+        "WeatherForecast.Grpc.WebApp": {},
+        "WeatherForecast.Grpc.Server": {}
+      }
+    },
+    "Weather Server-Client Stream": {
+      "Projects": {
+        "WeatherForecast.Grpc.StreamingClient": {},
+        "WeatherForecast.Grpc.Server": {}
+      }
+    },
+    "Weather Bidirectional Stream": {
+      "Projects": {
+        "WeatherForecast.Grpc.ClientServerStreaming": {},
         "WeatherForecast.Grpc.Server": {}
       }
     },

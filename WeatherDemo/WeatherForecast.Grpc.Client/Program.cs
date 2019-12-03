@@ -20,7 +20,7 @@ namespace WeatherForecast.Grpc.Client
             using var channel = GrpcChannel.ForAddress("https://localhost:5005");
 
             var client = new WeatherForecastsClient(channel);
-            
+
             var reply = await client.GetWeatherAsync(new Empty());
             stopWatch.Stop();
 

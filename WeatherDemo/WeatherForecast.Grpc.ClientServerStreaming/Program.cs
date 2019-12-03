@@ -10,6 +10,9 @@ namespace WeatherForecast.Grpc.ClientServerStreaming
     {
         private static async Task Main(string[] args)
         {
+            Console.WriteLine("Press a key to start");
+            Console.ReadKey();
+
             using var channel = GrpcChannel.ForAddress("https://localhost:5005");
             var client = new WeatherForecastsClient(channel);
 
@@ -43,7 +46,7 @@ namespace WeatherForecast.Grpc.ClientServerStreaming
                 Console.ResetColor();
 
                 await townForecast.RequestStream.WriteAsync(new TownWeatherRequest{ TownName = town });
-                               
+
                 await Task.Delay(2500); // simulate delay getting next item
             }
 

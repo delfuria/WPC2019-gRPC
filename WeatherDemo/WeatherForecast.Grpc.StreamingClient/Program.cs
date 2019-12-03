@@ -12,6 +12,9 @@ namespace WeatherForecast.Grpc.StreamingClient
     {
         private static async Task Main()
         {
+            Console.WriteLine("Press a key to start");
+            Console.ReadKey();
+
             using var channel = GrpcChannel.ForAddress("https://localhost:5005");
             var client = new WeatherForecastsClient(channel);
 
@@ -27,10 +30,10 @@ namespace WeatherForecast.Grpc.StreamingClient
                 }
             }
             catch (RpcException ex) when (ex.StatusCode == StatusCode.Cancelled)
-            {               
+            {
                 Console.WriteLine("Stream cancelled.");
             }
-            
+
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
         }
