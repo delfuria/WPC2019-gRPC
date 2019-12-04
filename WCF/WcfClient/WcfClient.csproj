@@ -63,10 +63,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CalculatorLibrary\CalculatorLibrary.csproj">
-      <Project>{e23a171d-d933-4154-b605-3724ff90d400}</Project>
-      <Name>CalculatorLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WcfLibrary\WcfLibrary.csproj">
       <Project>{450f4b05-fb1f-4a96-93a4-1162b95d846d}</Project>
       <Name>WcfLibrary</Name>

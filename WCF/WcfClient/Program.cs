@@ -28,7 +28,7 @@ namespace WcfClient
 
             double result = client.Sum(value1, value2);
 
-            Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
+            Console.WriteLine("Sum({0},{1}) = {2}", value1, value2, result);
 
             //Step 3: Chiude il ciente, la connessione e rilascia le risorse.
             client.Close();

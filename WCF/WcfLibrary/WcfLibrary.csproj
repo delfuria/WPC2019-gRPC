@@ -52,13 +52,8 @@
   <ItemGroup>
     <Compile Include="ClientHelper.cs" />
     <Compile Include="ClientProxy.cs" />
+    <Compile Include="ICalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CalculatorLibrary\CalculatorLibrary.csproj">
-      <Project>{E23A171D-D933-4154-B605-3724FF90D400}</Project>
-      <Name>CalculatorLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
