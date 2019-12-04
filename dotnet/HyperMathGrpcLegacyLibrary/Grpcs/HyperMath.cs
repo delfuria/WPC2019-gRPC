@@ -41,7 +41,7 @@ namespace HyperMath.Grpc {
   }
   #region Messages
   /// <summary>
-  /// The request message containing the user's name.
+  /// Definizione dei messaggi
   /// </summary>
   public sealed partial class MathRequest : pb::IMessage<MathRequest> {
     private static readonly pb::MessageParser<MathRequest> _parser = new pb::MessageParser<MathRequest>(() => new MathRequest());
@@ -200,9 +200,6 @@ namespace HyperMath.Grpc {
 
   }
 
-  /// <summary>
-  /// The response message containing the greetings.
-  /// </summary>
   public sealed partial class MathReply : pb::IMessage<MathReply> {
     private static readonly pb::MessageParser<MathReply> _parser = new pb::MessageParser<MathReply>(() => new MathReply());
     private pb::UnknownFieldSet _unknownFields;

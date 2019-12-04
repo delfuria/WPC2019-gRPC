@@ -10,6 +10,9 @@ namespace WeatherForecast.Grpc.HealthCheckClient
     {
         private static async Task Main()
         {
+            Console.WriteLine("Press a key to start");
+            Console.ReadKey();
+
             using var channel = GrpcChannel.ForAddress("https://localhost:5005");
 
             var healthClient = new Health.HealthClient(channel);

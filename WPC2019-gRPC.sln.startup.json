@@ -135,6 +135,12 @@
         "WeatherForecast.Grpc.ClientServerStreaming": {},
         "WeatherForecast.Grpc.Server": {}
       }
+    },
+    "Weather HealtCheck": {
+      "Projects": {
+        "WeatherForecast.Grpc.HealthCheckClient": {},
+        "WeatherForecast.Grpc.Server": {}
+      }
     }
   }
 }

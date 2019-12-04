@@ -35,7 +35,7 @@ namespace WeatherForecast.Grpc.Server
                         ? HealthCheckResponse.Types.ServingStatus.Serving
                         : HealthCheckResponse.Types.ServingStatus.NotServing);
 
-                await Task.Delay(TimeSpan.FromSeconds(15), stoppingToken);
+                await Task.Delay(TimeSpan.FromSeconds(55), stoppingToken);
             }
         }
     }

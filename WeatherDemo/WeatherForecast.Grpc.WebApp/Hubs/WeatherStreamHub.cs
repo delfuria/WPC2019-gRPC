@@ -33,7 +33,7 @@ namespace WeatherForecast.Grpc.WebApp.Hubs
                 try
                 {
                     await foreach(var forecast in replies.ResponseStream.ReadAllAsync())
-                    {                  
+                    {
                         await writer.WriteAsync($"{forecast.DateTimeStamp.ToDateTime():d} | {forecast.Summary} | {forecast.TemperatureC} C", cancellationToken);
                     }
                 }

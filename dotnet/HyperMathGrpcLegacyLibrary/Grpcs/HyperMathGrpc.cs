@@ -9,7 +9,7 @@ using grpc = global::Grpc.Core;
 
 namespace HyperMath.Grpc {
   /// <summary>
-  /// The MathService service definition.
+  /// Definizione del servizio.
   /// </summary>
   public static partial class MathService
   {
@@ -43,7 +43,7 @@ namespace HyperMath.Grpc {
     public abstract partial class MathServiceBase
     {
       /// <summary>
-      /// Do a Sum
+      /// Definizione delle chiamate
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -84,7 +84,7 @@ namespace HyperMath.Grpc {
       }
 
       /// <summary>
-      /// Do a Sum
+      /// Definizione delle chiamate
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -96,7 +96,7 @@ namespace HyperMath.Grpc {
         return Sum(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Do a Sum
+      /// Definizione delle chiamate
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -106,7 +106,7 @@ namespace HyperMath.Grpc {
         return CallInvoker.BlockingUnaryCall(__Method_Sum, null, options, request);
       }
       /// <summary>
-      /// Do a Sum
+      /// Definizione delle chiamate
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -118,7 +118,7 @@ namespace HyperMath.Grpc {
         return SumAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Do a Sum
+      /// Definizione delle chiamate
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
