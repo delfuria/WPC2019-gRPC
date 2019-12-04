@@ -9,7 +9,7 @@
     <ProjectReference Include="..\HyperMathGrpcLegacyLibrary\HyperMathGrpcLegacyLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="..\Protos\HyperMath.proto" GrpcServices="Client" />
+    <Protobuf Include="..\..\Protos\HyperMath.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

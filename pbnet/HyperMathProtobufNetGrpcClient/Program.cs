@@ -18,7 +18,7 @@ namespace HyperMathProtobufNetGrpcClient
             var calculator = http.CreateGrpcService<IHyperMath>();
             var result = await calculator.SumAsync(new MathRequest { Op1 = 10, Op2 = 20 });
 
-            Console.WriteLine(result.Resp); // 30
+            Console.WriteLine($"Sum:{result.Resp}"); // 30
             Console.ReadLine();
 
         }

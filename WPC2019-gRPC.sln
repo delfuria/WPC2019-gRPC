@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcService", "dot
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET Core", ".NET Core", "{40E26348-2423-4EE1-AA15-3313BB927C85}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{CDF9FD53-B8B6-4184-B671-6992154AF7DA}"
-	ProjectSection(SolutionItems) = preProject
-		dotnetcore\Protos\HyperMath.proto = dotnetcore\Protos\HyperMath.proto
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperMathGrpcClient", "dotnetcore\HyperMathGrpcClient\HyperMathGrpcClient.csproj", "{C8047E7C-075B-4430-82A8-09CF6F952F24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".NET", ".NET", "{E65D2537-8374-4C5B-A78D-E01C24634489}"
@@ -114,7 +109,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecast.WCF.Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple Demo", "Simple Demo", "{2D118783-8231-484C-A11B-F5E150200480}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\Users\stefano\Desktop\protobuf-net.Grpc-master\examples\grpc\Shared\Descriptor.proto = ..\..\..\Users\stefano\Desktop\protobuf-net.Grpc-master\examples\grpc\Shared\Descriptor.proto
+		Protos\Descriptor.proto = Protos\Descriptor.proto
 		Protos\HyperMath.proto = Protos\HyperMath.proto
 	EndProjectSection
 EndProject
@@ -275,7 +270,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3E82084D-FBEF-4EB4-B8CD-E2B06186716E} = {40E26348-2423-4EE1-AA15-3313BB927C85}
 		{40E26348-2423-4EE1-AA15-3313BB927C85} = {2D118783-8231-484C-A11B-F5E150200480}
-		{CDF9FD53-B8B6-4184-B671-6992154AF7DA} = {40E26348-2423-4EE1-AA15-3313BB927C85}
 		{C8047E7C-075B-4430-82A8-09CF6F952F24} = {40E26348-2423-4EE1-AA15-3313BB927C85}
 		{E65D2537-8374-4C5B-A78D-E01C24634489} = {2D118783-8231-484C-A11B-F5E150200480}
 		{EC4C276A-FA50-4F5F-8639-DE5FF944B30F} = {E65D2537-8374-4C5B-A78D-E01C24634489}

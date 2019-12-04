@@ -32,6 +32,7 @@ namespace WcfClient
 
             //Step 3: Chiude il ciente, la connessione e rilascia le risorse.
             client.Close();
+
             Console.ReadLine();
         }
     }
