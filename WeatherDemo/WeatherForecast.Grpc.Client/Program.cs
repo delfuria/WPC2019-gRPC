@@ -14,38 +14,32 @@ namespace WeatherForecast.Grpc.Client
             Console.WriteLine("Press a key to start");
             Console.ReadKey();
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-
-            using var channel = GrpcChannel.ForAddress("https://localhost:5005");
-
-            var client = new WeatherForecastsClient(channel);
-
-            var reply = await client.GetWeatherAsync(new Empty());
-            stopWatch.Stop();
-
-            foreach (var forecast in reply.WeatherData)
+            long times = 0;
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"{forecast.DateTimeStamp.ToDateTime():s} | {forecast.Summary} | {forecast.TemperatureC} C");
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
+
+                using var channel = GrpcChannel.ForAddress("https://localhost:5005");
+                var client = new WeatherForecastsClient(channel);
+                var reply = await client.GetWeatherAsync(new Empty());
+
+                stopWatch.Stop();
+
+                if (i == 0)
+                    foreach (var forecast in reply.WeatherData)
+                    {
+                        Console.WriteLine($"{forecast.DateTimeStamp.ToDateTime():s} | {forecast.Summary} | {forecast.TemperatureC} C");
+                    }
+                else
+                    times += stopWatch.ElapsedMilliseconds;
+                Console.WriteLine($"Time Elapsed {stopWatch.ElapsedMilliseconds}");
+                Console.WriteLine("Press a key to exit");
+                Console.ReadKey();
             }
-
-            Console.WriteLine($"Time Elapsed {stopWatch.ElapsedMilliseconds}");
+            Console.WriteLine($"Average time:{times / 9}");
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
-
-            Stopwatch stopWatch1 = new Stopwatch();
-            stopWatch1.Start();
-
-            using var channel1 = GrpcChannel.ForAddress("https://localhost:5005");
-
-            var client1 = new WeatherForecastsClient(channel1);
-
-            var reply1 = await client.GetWeatherAsync(new Empty());
-            stopWatch1.Stop();
-            Console.WriteLine($"Time Elapsed {stopWatch1.ElapsedMilliseconds}");
-            Console.WriteLine("Press a key to exit");
-            Console.ReadKey();
-
         }
     }
 }

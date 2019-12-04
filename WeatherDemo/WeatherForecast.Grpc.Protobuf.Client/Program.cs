@@ -15,37 +15,34 @@ namespace WeatherForecast.Grpc.Protobuf.Client
             Console.WriteLine("Press a key to start");
             Console.ReadKey();
 
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
-
-            GrpcClientFactory.AllowUnencryptedHttp2 = true;
-            var http = GrpcChannel.ForAddress("http://localhost:5001");
-            var client = http.CreateGrpcService<IWeatherForecasts>();
-
-            var response = await client.GetWeatherAsync();
-
-            stopWatch.Stop();
-            foreach (var forecast in response.Forecasts)
+            long times = 0;
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine($"{forecast.DateTime:s} | {forecast.Summary} | {forecast.TemperatureC} C");
+                Stopwatch stopWatch = new Stopwatch();
+                stopWatch.Start();
+
+                GrpcClientFactory.AllowUnencryptedHttp2 = true;
+                var http = GrpcChannel.ForAddress("http://localhost:5001");
+                var client = http.CreateGrpcService<IWeatherForecasts>();
+                var response = await client.GetWeatherAsync();
+
+                stopWatch.Stop();
+
+                if (i == 0)
+                    foreach (var forecast in response.Forecasts)
+                    {
+                        Console.WriteLine($"{forecast.DateTime:s} | {forecast.Summary} | {forecast.TemperatureC} C");
+                    }
+                else
+                    times += stopWatch.ElapsedMilliseconds;
+
+                Console.WriteLine($"Time Elapsed {stopWatch.ElapsedMilliseconds}");
+                Console.WriteLine("Press a key to exit");
+                Console.ReadKey();
             }
-
-            Console.WriteLine($"Time Elapsed {stopWatch.ElapsedMilliseconds}");
+            Console.WriteLine($"Average time:{times / 9}");
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
-
-            Stopwatch stopWatch1 = new Stopwatch();
-            stopWatch1.Start();
-            var http1 = GrpcChannel.ForAddress("http://localhost:5001");
-            var client1 = http.CreateGrpcService<IWeatherForecasts>();
-
-            var response1 = await client1.GetWeatherAsync();
-
-            stopWatch1.Stop();
-            Console.WriteLine($"Time Elapsed {stopWatch1.ElapsedMilliseconds}");
-            Console.WriteLine("Press a key to exit");
-            Console.ReadKey();
-
         }
     }
 }
