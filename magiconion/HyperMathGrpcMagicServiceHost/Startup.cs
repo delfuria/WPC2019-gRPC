@@ -26,7 +26,7 @@ namespace HyperMathGrpcMagicServiceHost
             {
                 // XmlDocumentPath = xmlPath
             });
-            app.UseMagicOnionHttpGateway(magicOnion.MethodHandlers, new Channel("localhost:12345", ChannelCredentials.Insecure));
+            app.UseMagicOnionHttpGateway(magicOnion.MethodHandlers, new Channel("localhost:5001", ChannelCredentials.Insecure));
         }
     }
 }
