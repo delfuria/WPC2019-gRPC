@@ -1,5 +1,6 @@
 ﻿using Grpc.Net.Client;
 using HyperMathProtobufNetGrpcLibrary;
+using ProtoBuf;
 using ProtoBuf.Grpc.Client;
 using System;
 using System.Threading.Tasks;
@@ -13,10 +14,13 @@ namespace HyperMathProtobufNetGrpcClient
             Console.WriteLine("Welcome to the gRPC client, Press Enter to continue");
             Console.ReadLine();
 
+            string proto = Serializer.GetProto<MathRequest>();
+
             GrpcClientFactory.AllowUnencryptedHttp2 = true;
             var http = GrpcChannel.ForAddress("http://localhost:5001");
             var calculator = http.CreateGrpcService<IHyperMath>();
             var result = await calculator.SumAsync(new MathRequest { Op1 = 10, Op2 = 20 });
+
 
             Console.WriteLine($"Sum:{result.Resp}"); // 30
             Console.ReadLine();

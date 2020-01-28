@@ -39,6 +39,9 @@ namespace WeatherForecast.Grpc.Server
 
             app.UseRouting();
 
+            //// Add gRPC-Web middleware after routing and before endpoints
+            //app.UseGrpcWeb();
+
             app.UseEndpoints(endpoints =>
             {
                 // health checks
@@ -46,6 +49,9 @@ namespace WeatherForecast.Grpc.Server
                 endpoints.MapGrpcService<HealthServiceImpl>();
 
                 endpoints.MapGrpcService<WeatherService>();
+
+                //// Enable gRPC-Web in endpoints
+                //endpoints.MapGrpcService<WeatherService>().EnableGrpcWeb();
 
                 endpoints.MapGet("/", async context =>
                 {
@@ -55,3 +61,4 @@ namespace WeatherForecast.Grpc.Server
         }
     }
 }
+

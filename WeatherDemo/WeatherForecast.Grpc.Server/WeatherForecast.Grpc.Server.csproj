@@ -5,8 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Grpc.AspNetCore" Version="2.25.0" />
-        <PackageReference Include="Grpc.HealthCheck" Version="2.25.0" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.27.0-pre1" />
+        <PackageReference Include="Grpc.AspNetCore.Web" Version="2.27.0-pre1" />
+        <PackageReference Include="Grpc.HealthCheck" Version="2.27.0-pre1" />
     </ItemGroup>
 
     <ItemGroup>
